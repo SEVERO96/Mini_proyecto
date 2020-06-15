@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class = "container">
+        <p id="p1" class="p-3 mb-2 bg-info text-white" class="font-weight-bolder">MOVING ZEROS TO END</p>
+        <p  class="text-white bg-dark">Valor: </p>
+        <input class="form-control" type="text" id="valor" value="numero" onFocus="if (this.value=='numero') this.value='';"><br>
+        <button  onclick="Agregar()" type="button" class="btn btn-primary">Agregar</button>
+        <button onclick="Eliminar()" type="button" class="btn btn-primary">Eliminar</button>
+        <br>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="operacion" id="AgregarInicio" value="AgregarInicio" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                Agregar elemento al inicio<br>
+                <input class="form-check-input" type="radio" name="operacion" id="AgregarFinal" value="AgregarFinal">
+                <label class="form-check-label" for="exampleRadios2">
+                Agregar elemento al Final
+                </label>
+         </div>
+        <hr>
+        <p  class="text-white bg-dark">Array original : </p><p class = "p2" id="elementoOriginal"></p><br>
+        <hr>
+        <p  class="text-white bg-dark">Array ordenado : </p><p class = "p2" class="text-danger" id="Ordenado"></p><br>
+        <button type="button" class="btn btn-primary" onclick="Ordenar()" >Ordenar</button>
+        <button onclick="Limpiar()" type="button" class="btn btn-primary">Limpiar</button><br>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+<style>
+    #p1 {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 900;
+    }
+   
+</style>
+
+</body>
+</html>
